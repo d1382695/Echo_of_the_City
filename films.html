@@ -3,87 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>章節路線與分頁預覽 | 都心迴響影展專題</title>
-    <meta name="description" content="都心迴響影展專題分頁：探索各章節巡迴路線、電動公車行經站點與影片目錄展示。">
+    
+    <!-- SEO 與 Open Graph 社群分享標籤 -->
+    <title>都心迴響：綠色永續與台中公車漫遊 | 大二影展專題</title>
+    <meta name="description" content="由曾千懿創作的大二影展專題「都心迴響」。探討台中城市空氣品質與永續發展，坐著舒適的電動公車放慢腳步漫遊台中，品嚐不一樣的味道，聆聽繁華城市的心跳聲。">
     <meta name="author" content="曾千懿">
     <meta name="robots" content="index, follow">
 
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="都心迴響：綠色永續與台中公車漫遊 | 曾千懿專題作品">
+    <meta property="og:description" content="我們身處在空氣品質不佳為常態的環境，坐著舒適便利的電動公車漫遊台中，體驗綠色永續與繁華城市的心跳聲。">
+    <meta property="og:image" content="images/taichung-bus.jpg">
+
+    <!-- 載入外部 CSS 樣式表 -->
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+    <!-- 頂部頁首與導覽列 -->
     <header class="main-header">
-        <h1>都心迴響：巡迴路線與章節列表</h1>
-        <p><small>大二影展專題作品 | 作者：曾千懿（學號：D1382695）</small></p>
+        <h1>都心迴響：綠色永續與台中公車漫遊</h1>
+        <p><small>大二影展專題作品 | 作者：曾千懿（逢甲大學 學號：D1382695）</small></p>
         <nav>
             <ul class="nav-menu">
-                <li><a href="index.html">專題簡介 (首頁)</a></li>
-                <li><a href="films.html" class="active">章節路線與分頁 (Films)</a></li>
+                <li><a href="index.html" class="active">專題簡介 (首頁)</a></li>
+                <li><a href="films.html">章節路線與分頁 (Films)</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- CSS Grid 雙欄版面容器 -->
     <div class="page-container">
+        
+        <!-- 主要內容區 -->
         <main>
-            <h2>影展章節影片目錄 (第 1 頁)</h2>
-            <p>點選下方影片章節卡片，了解《都心迴響》紀錄片中收錄的不同台中地區慢遊主題：</p>
+            <article>
+                <section id="concept">
+                    <h2>一、 影展主題起源與永續理念</h2>
+                    <p>
+                        我們身處在空氣品質不佳為常態的居住環境，隨著都市化迅速發展，交通廢氣與環境負擔日趨嚴重。這讓我們深刻意識到，身為當代青年與都市公民，我們必須為了這座城市的環境永續盡一份心力。
+                    </p>
+                    <p>
+                        在科技發達、多元發展的現代交通工具中，屬<strong>純電動公車</strong>最為方便、環保且具備高普及性。坐著舒適安靜的電動公車，陪伴我們放慢緊繃的日常生活腳步。在低碳移動中漫遊台中，品嚐不一樣的在地味道，體驗一種特別的微觀感受，傾聽這繁華城市最真實的心跳聲。
+                    </p>
+                </section>
 
-            <!-- 卡片 Grid 網格展示區（輪流使用第一張與第二張照片） -->
-            <div class="film-grid">
-                <div class="film-card">
-                    <img src="images/taichung-bus.jpg" alt="第一章：綠能微風照片">
-                    <div class="film-card-content">
-                        <h3>第一章：綠能微風</h3>
-                        <p>搭乘電動公車穿越台灣大道與綠園道，體驗寧靜無污染的無噪音通勤時光。</p>
+                <hr>
+
+                <section id="media">
+                    <h2>二、 影音紀錄與專題預告片</h2>
+                    <p>透過影像鏡頭，記錄電動公車穿梭於台中街頭的寧靜身影與城市角落：</p>
+                    
+                    <div class="media-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/cYB2IQ08Wrs" title="都心迴響影展專題影片" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
-                </div>
+                </section>
 
-                <div class="film-card">
-                    <img src="images/taichung-city.jpg" alt="第二章：巷弄尋味照片">
-                    <div class="film-card-content">
-                        <h3>第二章：巷弄尋味</h3>
-                        <p>於舊城區傳統市場下車漫步，深入傳統在地老店，品嚐屬於台中的獨特風味。</p>
-                    </div>
-                </div>
+                <hr>
 
-                <div class="film-card">
-                    <img src="images/taichung-bus.jpg" alt="第三章：低碳綠洲照片">
-                    <div class="film-card-content">
-                        <h3>第三章：低碳綠洲</h3>
-                        <p>探索綠色運具如何改變都市呼吸質感，紀錄台中空氣改善與永續行動的努力過程。</p>
-                    </div>
-                </div>
+                <section id="highlights">
+                    <h2>三、 永續漫遊三大核心主張</h2>
+                    <ul>
+                        <li><strong>零碳低碳出行：</strong>搭乘純電動公車，大幅降低交通移動過程中的碳排放與廢氣污染，還給城市一片純淨藍天。</li>
+                        <li><strong>慢活城市視角：</strong>擺脫繁忙步調，透過公車大面車窗視角，以輕鬆穩定的速度重新觀察台中的街角與歷史建築。</li>
+                        <li><strong>在地美味體驗：</strong>結合台中幹線公車沿線的舊城區美食與文創聚落，用味覺與視覺品嚐屬於台中的獨特風味。</li>
+                    </ul>
+                </section>
 
-                <div class="film-card">
-                    <img src="images/taichung-city.jpg" alt="第四章：心跳城市照片">
-                    <div class="film-card-content">
-                        <h3>第四章：心跳城市</h3>
-                        <p>在傍晚華燈初上之際，乘坐公車靜靜觀察市區街景，聽見繁華台中最溫柔的心跳聲。</p>
-                    </div>
-                </div>
-            </div>
+                <hr>
 
-            <!-- 分頁按鈕 UI (Pagination) -->
-            <ul class="pagination">
-                <li><a href="#" class="active">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">下一頁 &raquo;</a></li>
-            </ul>
+                <!-- 四張相片完整巡禮展區 -->
+                <section id="gallery">
+                    <h2>四、 四大主題影像巡禮</h2>
+                    
+                    <figure class="film-card" style="margin-bottom: 20px;">
+                        <img src="images/taichung-bus.jpg" alt="台中綠能電動公車外觀與低碳出行紀錄" width="800" height="450">
+                        <figcaption class="film-card-content">
+                            圖一：綠能低碳移動——台中純電動公車外觀與乾淨無噪音通勤體驗
+                        </figcaption>
+                    </figure>
+
+                    <figure class="film-card" style="margin-bottom: 20px;">
+                        <img src="images/taichung-city.jpg" alt="台中舊城區街景與在地人文景致漫遊" width="800" height="450">
+                        <figcaption class="film-card-content">
+                            圖二：巷弄尋味——乘坐電動公車漫遊台中舊城街景與沿線風情
+                        </figcaption>
+                    </figure>
+
+                    <figure class="film-card" style="margin-bottom: 20px;">
+                        <img src="images/taichung-green.jpg" alt="台中綠園道與都會低碳綠洲景致" width="800" height="450">
+                        <figcaption class="film-card-content">
+                            圖三：低碳綠洲——綠園道公園周邊的城市綠意與空氣改善紀錄
+                        </figcaption>
+                    </figure>
+
+                    <figure class="film-card">
+                        <img src="images/taichung-night.jpg" alt="台中市區傍晚燈火與城市心跳聲" width="800" height="450">
+                        <figcaption class="film-card-content">
+                            圖四：心跳城市——傍晚車燈華燈初上，感受台中繁華且溫柔的心跳聲
+                        </figcaption>
+                    </figure>
+                </section>
+            </article>
         </main>
 
+        <!-- 側邊欄 -->
         <aside>
-            <h2>路線篩選與分類</h2>
-            <p>您可依幹線公車路線、永續綠能議題或在地美食分區進行章節檢索與觀看。</p>
+            <h2>策展小提醒</h2>
+            <p><strong>綠色交通行動實踐：</strong></p>
+            <p>搭乘台中市區電動公車享前 10 公里免費與電子票證折扣。讓我們從日常通勤開始，為環境減碳盡一份心力！</p>
             <hr>
-            <h3>分頁說明</h3>
-            <p><small>目前頁面：第 1 頁（共 3 頁）。全片共包含八大子章節紀錄。</small></p>
+            <h3>專題檔案備忘</h3>
+            <ul>
+                <li><strong>策展人：</strong>曾千懿</li>
+                <li><strong>學號：</strong>D1382695</li>
+                <li><strong>指導專題：</strong>大二影展專題作品</li>
+                <li><strong>主題地點：</strong>台中市區與綠能公車路網</li>
+                <li><strong>影展紀錄片：</strong>《都心迴響》全劇</li>
+            </ul>
         </aside>
+
     </div>
 
     <footer>
-        <p>&copy; 2026 曾千懿 (D1382695) | 逢甲大學</p>
+        <p>&copy; 2026 曾千懿 (D1382695) | 逢甲大學 數位行銷與企業管理課程作品</p>
     </footer>
 
 </body>
