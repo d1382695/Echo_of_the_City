@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>章節路線與分頁預覽 | 都心迴響</title>
+    <title>章節路線與分頁預覽 | 都心迴響影展專題</title>
+    <meta name="description" content="都心迴響影展專題分頁：探索各章節巡迴路線、電動公車行經站點與影片目錄展示。">
+    <meta name="author" content="曾千懿">
+    <meta name="robots" content="index, follow">
+
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -11,6 +15,7 @@
 
     <header class="main-header">
         <h1>都心迴響：巡迴路線與章節列表</h1>
+        <p><small>大二影展專題作品 | 作者：曾千懿（學號：D1382695）</small></p>
         <nav>
             <ul class="nav-menu">
                 <li><a href="index.html">專題簡介 (首頁)</a></li>
@@ -22,26 +27,44 @@
     <div class="page-container">
         <main>
             <h2>影展章節影片目錄 (第 1 頁)</h2>
+            <p>點選下方影片章節卡片，了解《都心迴響》紀錄片中收錄的不同台中地區慢遊主題：</p>
+
+            <!-- 卡片 Grid 網格展示區（輪流使用第一張與第二張照片） -->
             <div class="film-grid">
-    <!-- 第一張卡片：使用第一張照片 -->
-    <div class="film-card">
-        <img src="images/taichung-bus.jpg" alt="章節一：綠能微風">
-        <div class="film-card-content">
-            <h3>第一章：綠能微風</h3>
-            <p>搭乘電動公車穿越市區綠園道，體驗寧靜無噪音的通勤時光。</p>
-        </div>
-    </div>
+                <div class="film-card">
+                    <img src="images/taichung-bus.jpg" alt="第一章：綠能微風照片">
+                    <div class="film-card-content">
+                        <h3>第一章：綠能微風</h3>
+                        <p>搭乘電動公車穿越台灣大道與綠園道，體驗寧靜無污染的無噪音通勤時光。</p>
+                    </div>
+                </div>
 
-    <!-- 第二張卡片：改用你的第二張新照片 -->
-    <div class="film-card">
-        <img src="images/taichung-city.jpg" alt="章節二：巷弄尋味">
-        <div class="film-card-content">
-            <h3>第二章：巷弄尋味</h3>
-            <p>於舊城區下車漫步，深入在地老店，品嚐屬於台中的獨特風味。</p>
-        </div>
-    </div>
-</div>
+                <div class="film-card">
+                    <img src="images/taichung-city.jpg" alt="第二章：巷弄尋味照片">
+                    <div class="film-card-content">
+                        <h3>第二章：巷弄尋味</h3>
+                        <p>於舊城區傳統市場下車漫步，深入傳統在地老店，品嚐屬於台中的獨特風味。</p>
+                    </div>
+                </div>
 
+                <div class="film-card">
+                    <img src="images/taichung-bus.jpg" alt="第三章：低碳綠洲照片">
+                    <div class="film-card-content">
+                        <h3>第三章：低碳綠洲</h3>
+                        <p>探索綠色運具如何改變都市呼吸質感，紀錄台中空氣改善與永續行動的努力過程。</p>
+                    </div>
+                </div>
+
+                <div class="film-card">
+                    <img src="images/taichung-city.jpg" alt="第四章：心跳城市照片">
+                    <div class="film-card-content">
+                        <h3>第四章：心跳城市</h3>
+                        <p>在傍晚華燈初上之際，乘坐公車靜靜觀察市區街景，聽見繁華台中最溫柔的心跳聲。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 分頁按鈕 UI (Pagination) -->
             <ul class="pagination">
                 <li><a href="#" class="active">1</a></li>
                 <li><a href="#">2</a></li>
@@ -51,13 +74,16 @@
         </main>
 
         <aside>
-            <h2>路線篩選</h2>
-            <p>可依幹線公車路線或特色美食用餐區進行分頁檢索。</p>
+            <h2>路線篩選與分類</h2>
+            <p>您可依幹線公車路線、永續綠能議題或在地美食分區進行章節檢索與觀看。</p>
+            <hr>
+            <h3>分頁說明</h3>
+            <p><small>目前頁面：第 1 頁（共 3 頁）。全片共包含八大子章節紀錄。</small></p>
         </aside>
     </div>
 
     <footer>
-        <p>&copy; 2026 曾千懿 (D1382695)</p>
+        <p>&copy; 2026 曾千懿 (D1382695) | 逢甲大學</p>
     </footer>
 
 </body>
